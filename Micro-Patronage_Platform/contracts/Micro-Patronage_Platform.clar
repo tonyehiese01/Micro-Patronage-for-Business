@@ -234,7 +234,6 @@
     (map-set patronage-subscriptions subscription-key
       (merge subscription {is-active: false}))
     (ok true)))
-
 ;; Reactivate Subscription
 (define-public (reactivate-subscription (business principal))
   (let (
