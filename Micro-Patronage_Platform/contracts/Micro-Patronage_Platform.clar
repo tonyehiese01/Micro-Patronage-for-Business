@@ -205,8 +205,7 @@
         (merge business-data
           {
             total-received: (+ (get total-received business-data) business-amount)
-          }))
-      
+          })) 
       ;; Update patron relationship
       (let ((patron-key {business: business, patron: patron}))
         (match (map-get? business-patrons patron-key)
