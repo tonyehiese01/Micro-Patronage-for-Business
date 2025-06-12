@@ -149,8 +149,7 @@
         is-active: true,
         created-at: current-time,
         subscription-id: subscription-id
-      })
-    
+      }) 
     ;; Initialize or update business-patron relationship
     (let ((patron-key {business: business, patron: patron}))
       (match (map-get? business-patrons patron-key)
