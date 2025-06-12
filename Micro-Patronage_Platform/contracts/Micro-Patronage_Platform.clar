@@ -352,7 +352,6 @@
       business-receives: business-amount,
       platform-fee: platform-fee
     }))
-
 ;; Get business statistics
 (define-read-only (get-business-stats (business principal))
   (match (map-get? businesses business)
